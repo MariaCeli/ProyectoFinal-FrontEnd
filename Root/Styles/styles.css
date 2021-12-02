@@ -143,6 +143,7 @@ h1 {
     display: flex;
     flex-direction: column;
     
+    
 }
 
 .contenedor-div2 {
@@ -242,6 +243,12 @@ p {
     line-height: 156.6%;
 }
 
+#contenedor-circles {
+    display: none;
+}
+
+
+
 /* Clases aplicadas al button centrado de la página */
 
 #button-center {
@@ -300,6 +307,16 @@ footer {
     height: 247px;
     align-items: center;
 
+}
+
+.contenedorInvisible {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#span-copy {
+    display: none;
 }
 
 .contenedor3 {
@@ -395,7 +412,7 @@ form {
 
 }
 
-#span-copy {
+#span-copy1 {
     color: #8C8C94;
     font-style: normal;
     font-weight: 500;
@@ -424,7 +441,7 @@ form {
     }
     h1 {
         text-align: center;
-        font-size: 38px;
+        font-size: 40px;
         line-height: 50px;
         
     }
@@ -464,22 +481,36 @@ form {
     .contenedor-div1 h5{
         display: none;
     }
+    .contenedor-div1 br {
+        display:none;
+    }
+    .contenedor-div1{
+        margin-left: 10px;
+        gap: 0px;
+        margin-top: 0px;
+        color: #B3B2B7;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        
+    }
     .contenedor-div2{
         flex-direction: column;
     }
     .contenedorTitulo{
         display:flex;
         align-items: center;
-        background-color:#f3613d4b;
+        background-color:#f3613d1f;
         margin-left: 10px;
+        margin-bottom: 0px;
     }
-
-
     .wraper{
         display:flex;
         justify-content: space-around;
         flex-direction: column;
-        align-self:stretch;
+        align-items: center;
+        margin-left: 15px;
+
         
     }
     .contenedorTitulo h5{
@@ -520,11 +551,45 @@ form {
         height: 35px;
         font-size: 10px;
     }
+
+    /*Segundo Section del code*/
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .circulo {
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        
+        border: 2px solid #F3603B;
+    }
+    
+    #circle-inline {
+        background: #F3603B;
+    }
+    
+    #contenedor-circles{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-top: 100px;
+        margin-left: 30px;
+        
+    }
+
+    
+
     /*Contenedor naranja */
     .contenedorOrange {
         display: flex;
         flex-direction: column;
         gap: 0px;
+        width: 100vw;
     }
     #h2-white {
         font-size: 25px;
@@ -543,8 +608,9 @@ form {
         align-items: center;
         flex-direction: column;
         justify-content: space-around;
-        
+        width: 100vw;
         height: 150vw;
+        
         
     }
     form {
@@ -552,6 +618,10 @@ form {
         margin-top: 25px;
         margin-left: 0px;
         
+        
+    }
+    footer #span-copy1 {
+        display: none;
     }
     .contenedor3 {
         display:flex;
@@ -572,7 +642,13 @@ form {
         align-items: center;
     }
     #span-copy {
+        display: block;
         order: 3;
+        color: #8C8C94;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12.5px;
+        line-height: 18px;
     }
     #ingresar-dato{
         width: 250px;
